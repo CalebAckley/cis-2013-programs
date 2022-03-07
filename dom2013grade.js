@@ -3,7 +3,7 @@ var $ = function (id)
     return document.getElementById(id);
 };
 
-var calculate_click = function (var intGradeOption, floatTotalPts, floatHwPts, floatMidPts, floatFinPts, stringFinalGrade;
+calculate_click = function (var intGradeOption, floatTotalPts, floatHwPts, floatMidPts, floatFinPts, stringFinalGrade;
 
 floatHwPts = parseFloat(prompt("Please enter final HW pts (0-30):"));
 
