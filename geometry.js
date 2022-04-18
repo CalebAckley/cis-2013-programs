@@ -49,12 +49,65 @@ var do_it = function ()
     }
 	
 
-//calculate the triangle area using Heron's formula (don't remember it? look it up...) and perimeter	
+//calculate the triangle area using Heron's formula (don't remember it? look it up...) and perimeter
+var calcTriS = function()
+{
+    var floatTriSide1 = parseFloat ($("tri_side1").value);
+    var floatTriSide2 = parseFloat ($("tri_side2").value);
+    var floatTriSide3 = parseFloat ($("tri_side3").value);
+    alert ("The triangle s is " + triS(floatTriSide1, floatTriSide2, floatTriSide3));
+};
+function triS(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
+{
+    var floatTriS = (floatTriSide1 + floatTriSide2 + floatTriSide3) / 2;
+    return floatTriS.toFixed(2);
+}
+
+
+
+var calcTriangleArea = function ()
+{
+    var floatTriSide1 = parseFloat ($("tri_side1").value);
+    var floatTriSide2 = parseFloat ($("tri_side2").value);
+    var floatTriSide3 = parseFloat ($("tri_side3").value);
+    alert ("The triangle area is " + triArea(floatTriSide1, floatTriSide2, floatTriSide3));
+};
+function triangleArea(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
+{
+    var floatTriangleArea = Math.sqrt((floatTriS*(floatTriS-floatTriSide1)*(floatTriS-floatTriSide2)*(floatTriS-floatTriSide3)));
+    return floatTriangleArea.toFixed(2);
+}
+
+
+var calcTrianglePerim = function()
+{
+    var floatTriSide1 = parseFloat ($("tri_side1").value);
+    var floatTriSide2 = parseFloat ($("tri_side2").value);
+    var floatTriSide3 = parseFloat ($("tri_side3").value);
+    alert ("The triangle perimeter is " + triPerim(floatTriSide1, floatTriSide2, floatTriSide3));
+};
+function triPerim(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
+{
+  var floatTrianglePerim =  floatTriSide1 + floatTriSide2 + floatTriSide3;
+  return floatTrianglePerim.toFixed(2);
+}
+};
+
 	floatS = (floatTriSide2 + floatTriSide2 + floatTriSide3)/2;
 	floatTriangleArea = Math.sqrt((floatS*(floatS-floatTriSide1)*(floatS-floatTriSide2)*(floatS-floatTriSide3)));
 	floatTrianglePerim = floatTriSide1 + floatTriSide2 + floatTriSide3;
 
-//calculate the circle area and circumference using convenient Math Object methods	
+//calculate the circle area and circumference using convenient Math Object methods
+var calcCircleArea = function ()
+{
+	var floatRadius = parseFloat ($("radius")).value);
+	alert ("The circle area is " + circleArea(floatRadius));
+}
+function circleArea(floatRadius_par)
+{
+    var floatCircleArea = Math.PI * Math.pow(floatRadius,2);
+		return floatCircleArea.toFixed(2);
+}
 	floatCircleArea = Math.PI * Math.pow(floatRadius,2);
 	floatCircleCircum = 2 * Math.PI * floatRadius;  
 	
