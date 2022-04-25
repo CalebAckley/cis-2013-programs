@@ -1,7 +1,4 @@
-/* This program challenges the user to guess a randomly generated number
- * within a range chosen by the user. Basic user input is validated to 
- * ensure numbers are entered and there are no guessing range violations
- * (such as choosing a number outside the high or low boundary of the range). 
+/* declares varibles. 
  */
 
 var intMax, intMin, intRandom, intGuess, intCount;
@@ -43,7 +40,7 @@ while (intMax < intMin + 2 || isNaN (intMax))
 intRandom = parseInt (Math.floor(Math.random()*(intMax-intMin+1))+intMin);
 
 
-// set the loop counter
+// loop counter
 
 intCount = 1;
 
