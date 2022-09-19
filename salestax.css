@@ -1,0 +1,19 @@
+body {
+    font-family: Times New Roman;
+    background-color: yellow;
+    margin: 140px auto;
+    width: 500px;
+    border: 5px solid blue;
+    padding: 0 2em 1em;
+    border-radius: 20px;
+    background: rgb (50, 100, 200);
+}
+div{
+    padding: .25em;
+    margin: .25em;
+    background: rgb(150, 175, 50);
+    background-image: linear-gradient(to bottom right, cyan, yellow);
+    border: 0.5px groove rgb(150, 175, 50);
+    border-radius: 20px;
+    line-height: 30px;
+}
